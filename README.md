@@ -6,7 +6,7 @@ Turn your Steam online-status into "onlineVR".
 
 ## How to install:
 
-$ git clone https://github.com/NF1337/SteamVRonline
+$ git clone https://github.com/NF1337/SteamVR-Status 
 
 $ cd steamVRonline
 
