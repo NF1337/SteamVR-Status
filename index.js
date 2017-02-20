@@ -21,7 +21,7 @@ let flagList = [
 	1024
 ];
 
-// Overwrite the SteamUser library's persona flags to make it yellow
+// Überschreibt die persona_state_flag auf den VR-Wert
 SteamUser.prototype.setPersona = function (state, name) {
 	if (flags > 0) {
 		this._send(SteamUser.EMsg.ClientChangeStatus, {
@@ -114,7 +114,6 @@ function getLogin(callback) {
 	}
 }
 
-// Get our login data, then login
 getLogin().then(data => {
 	flags = data.flags;
 	delete data.flags;
