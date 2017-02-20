@@ -1,0 +1,47 @@
+{
+  "name": "steamVRonline",
+  "version": "1.0.0",
+  "description": "Turns your Steam online-status to VR-online.",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^2.0.0",
+    "minimist": "^1.2.0",
+    "steam": "^1.4.0",
+    "steam-user": "^3.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NF1337/SteamVRonline"
+  },
+  "keywords": [
+    "steam",
+    "username",
+    "yellow"
+  ],
+  "author": "Drake Witt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NF1337/SteamVRonline/issues"
+  },
+  "homepage": "https://github.com/NF1337/SteamVRonline#readme",
+  "nexe": {
+    "input": "./bin/nexe",
+    "output": "nexe^$",
+    "temp": "src",
+    "browserify": {
+      "requires": [],
+      "excludes": [],
+      "paths": []
+    },
+    "runtime": {
+      "framework": "node",
+      "version": "5.6.0",
+      "js-flags": "--use_strict",
+      "ignoreFlags": true
+    }
+  }
+}
